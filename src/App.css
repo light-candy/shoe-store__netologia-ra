@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body{
+  padding:3em;
+}
+.shopitem{
+  display:flex;
+  flex-direction:row;
+  padding: 8px;
+  background:#f5f5f5;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:2px;
+}
+.shopitem_img{
+  height:70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  text-transform:uppercase;
+  font-weight:500;
+  font-size:28px;
+  color:#302e2c;
+  margin:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  text-transform:uppercase;
+  font-weight:800;
+  color:#d53d37;
+  background:#f5f5f5;
+  border:2px solid #d53d37;
+  border-radius:27px;
+  padding:0.7em 1.5em 0.7em 1.5em;
+  height:40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.shopitem_price {
+  color:#d53d37;
+  font-weight:500;
+  font-size: 22px;
 }
 
-.App-link {
-  color: #61dafb;
+.shopitem_color, .shopcard_color{
+  font-size:18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_layout{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 90px;
+}
+.shopcard{
+  background:#f5f5f5;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.4);
+  width:300px;
+  height:300px;
+  margin-bottom:40px;
+  padding:1em;
+
+}
+.shopcard_img{
+  height:180px;
+  width:180px;
+}
+.shopcard_title{
+  font-size:22px;
+  margin-bottom:5px;
+}
+.shopcard_color{
+  margin:0px;
+}
+.shopcard_footer{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+
+}
+.shopcard_price{
+  font-size:20px;
+  color:#d53d37;
+  font-weight:500;
+  margin:0;
+}
+.shopcard button{
+  font-size:14px;
+  height:40px;
+}
+
+.switcher_box{
+  display:flex;
+  justify-content:flex-end;
+  padding:1em;
+}
+.material-icons{
+  cursor:pointer
 }
